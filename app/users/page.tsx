@@ -1,12 +1,12 @@
 import React from "react";
-import UserTable from "./new/UserTable";
+import UserTable from "./UserTable";
 
 
 
 function UserPage() {
   return (
     <div>
-      <h1>User List</h1>
+      <h1>Users</h1>
       <UserTable/>
     </div>
   );

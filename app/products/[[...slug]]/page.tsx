@@ -2,16 +2,16 @@ import React from "react";
 
 interface props {
   params: { slug: string[] };
-  searchParams: { sortOrder: string };
+  searchParams: { sort: string }
 }
 
 const ProductPage = ({
   params: { slug },
-  searchParams: { sortOrder },
+  searchParams: { sort },
 }: props) => {
   return (
     <div>
-      ProductPage {slug} {sortOrder}
+      ProductPage {sort}
     </div>
   );
 };
