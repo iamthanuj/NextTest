@@ -1,12 +1,18 @@
 import React from "react";
 import UserTable from "./UserTable";
+import { sort } from 'fast-sort';
+
+interface Props{
+  searchParams : {sort:string}
+}
 
 
+async function UserPage({searchParams:{sort}}:Props) {
 
-function UserPage() {
+  console.log(sort)
   return (
     <div>
-      <h1>Users</h1>
+      <h1>Users List</h1>
       <UserTable/>
     </div>
   );
