@@ -13,7 +13,7 @@ async function UserPage({searchParams:{sort}}:Props) {
   return (
     <div>
       <h1>Users List</h1>
-      <UserTable/>
+      <UserTable sortOrder={sort}/>
     </div>
   );
 }
