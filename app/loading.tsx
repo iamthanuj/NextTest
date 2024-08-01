@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const loading = () => {
   return (
-    <div>loading</div>
-  )
-}
+    <div>
+      <span className="loading loading-spinner loading-lg"></span>
+    </div>
+  );
+};
 
-export default loading
+export default loading;
