@@ -16,7 +16,7 @@ async function UserPage({ searchParams: { sort } }: Props) {
         New User
       </Link>
       <Suspense fallback={<Loading/>}>
-        <UserTable sortOrder={sort} />
+         <UserTable sortOrder={sort} />
       </Suspense>
     </div>
   );
