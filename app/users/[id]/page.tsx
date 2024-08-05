@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation'
 import React from 'react'
 
 interface props{
@@ -5,6 +6,7 @@ interface props{
 }
 
 const UserDetailPage = ({params:{id}}:props) => {
+  if (id > 10) notFound();
   return (
     <div>UserDetailPage {id}</div>
   )
