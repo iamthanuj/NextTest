@@ -16,7 +16,7 @@ interface props{
 
 
 const UserTable = async ({sortOrder}:props) => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/xusers");
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const users: User[] = await res.json();
 
   const sortedUsers = sort(users).asc(sortOrder === "email" ? user => user.email : user=>user.name);
