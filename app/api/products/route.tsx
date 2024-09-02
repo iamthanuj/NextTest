@@ -24,7 +24,7 @@ export async function POST(request:NextRequest){
     }
 
     if(products){
-        return NextResponse.json({error:"Product already exist"}, {status:400})
+        return NextResponse.json({error:"Product already exist add new one"}, {status:400})
     }
 
     const newProduct = await prisma.products.create({
