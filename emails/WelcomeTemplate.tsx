@@ -5,7 +5,7 @@ const WelcomeTemplate = ({name}:{name:string}) => {
   return (
     <html>
         <Preview>Welcome to N3xtTest</Preview>
-        <Body>
+        <Body style={{background:'#fff'}}>
             <Container>
                 <Text>Hello {name}</Text>
                 <Link href='https://github.com/iamthanuj'>Follow RetroHammer</Link>
